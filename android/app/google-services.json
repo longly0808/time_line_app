@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "515303139699",
+    "project_id": "timelineapp2810-653b4",
+    "storage_bucket": "timelineapp2810-653b4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:515303139699:android:98172e9992155adbb0fd06",
+        "android_client_info": {
+          "package_name": "com.khpacific.time_line_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "515303139699-sh37nm0fsmdcccgs9jlbo6dfgnt9bnp8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.khpacific.time_line_app",
+            "certificate_hash": "f54d7b327a4d61ae8bb37e4b17a3b30d31d3c694"
+          }
+        },
+        {
+          "client_id": "515303139699-i8so5vbdmu0oe43tpvp4hblp6vs5oi16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwagzryj3YgMsrvJL5QY3TalK-ovB6cPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "515303139699-i8so5vbdmu0oe43tpvp4hblp6vs5oi16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
