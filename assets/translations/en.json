@@ -1,0 +1,9 @@
+{
+  "first": "first",
+  "hint_text_email": "email",
+  "hint_text_password": "password",
+  "text_button_login": "Login",
+  "text_forgot_password":"dont have an account?",
+  "text_sign_up": "Sign Up",
+  "last": "last"
+}

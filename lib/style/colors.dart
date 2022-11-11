@@ -18,8 +18,9 @@ class MyColors {
 
 
   ///dark theme
-  static const darkColor = Color.fromRGBO(11, 19, 32, 1.0);
-  static const darkCloudColor = Color.fromRGBO(57, 77, 95, 1.0);
+  static const darkColor = Color.fromRGBO(30, 27, 48, 1.0);
+  static const darkCloudColor = Color.fromRGBO(57, 48, 76, 1.0);
+  static const primaryDarkColor = Color.fromRGBO(23, 240, 223, 1.0);
   static const whiteColor = Color.fromRGBO(254, 249, 230, 1.0);
   static const darkAccentColor = Color.fromRGBO(201, 201, 201, 1.0);
 

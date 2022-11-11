@@ -89,9 +89,9 @@ class MyTheme{
   static ThemeData darkTheme(){
     return ThemeData(
       backgroundColor: MyColors.darkColor,
-        primaryColor: MyColors.darkCloudColor,
+        primaryColor: MyColors.primaryDarkColor,
         scaffoldBackgroundColor: MyColors.darkColor,
-        primaryColorDark: MyColors.lightColor,
+        primaryColorDark: MyColors.primaryDarkColor,
         colorScheme:  const ColorScheme(
           secondary: MyColors.darkAccentColor,
           primary: MyColors.darkCloudColor,

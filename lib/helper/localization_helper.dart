@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 class LocalizationHelper {
-  static String VN = 'vi';
-  static String EN = 'en';
+  static const String VN = 'vi';
+  static const String EN = 'en';
 
   static List<Locale> listLocale() => [
-        Locale(VN),
-        Locale(EN),
+        const Locale(VN),
+        const Locale(EN),
       ];
 }
