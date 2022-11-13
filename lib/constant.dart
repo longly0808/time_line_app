@@ -13,6 +13,7 @@ class Constants{
   static const profile_image ='assets/images/rafiki.png';
   static const note_image ='assets/images/note.png';
   static const redAsterisk = ' *';
+  static const String emptyString = '';
 }
 class DataFormat {
   static const String ddMMyyyy = 'dd/MM/yyyy';

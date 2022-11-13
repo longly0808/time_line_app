@@ -15,6 +15,7 @@ class MyColors {
   static const errorColor = Color.fromRGBO(255, 122, 104, 1);
   static const accentColor = Color.fromRGBO(41, 35, 63, 1.0);
   static const greenColor = Color.fromRGBO(0, 255, 25, 0.5);
+  static const toggleActiveColor = Color.fromRGBO(42, 117, 213, 1.0);
 
 
   ///dark theme

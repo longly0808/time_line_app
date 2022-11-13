@@ -36,7 +36,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
         enabledBorder: OutlineInputBorder(
             borderSide: BorderSide(color: theme.colorScheme.primary)),
         hintStyle: theme.textTheme.headline5!
-            .copyWith(color: theme.colorScheme.onBackground),
+            .copyWith(color: theme.colorScheme.onBackground.withOpacity(0.5)),
         hintText: widget.hintText,
         suffixIcon: widget.isTypePassword == true
             ? GestureDetector(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:time_line_app/dependencies.dart';
 import 'package:time_line_app/helper/localization_helper.dart';
+import 'package:time_line_app/page/auth/intro_screen.dart';
 import 'package:time_line_app/page/auth/login_screen.dart';
 import 'package:time_line_app/services/service.dart';
 import 'package:easy_localization/easy_localization.dart';
@@ -38,11 +39,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      debugShowCheckedModeBanner: false,
       localizationsDelegates: context.localizationDelegates,
       supportedLocales:  context.supportedLocales,
       locale: context.locale,
-      theme: MyTheme.lightTheme(),
-      home: const LoginScreen(),
+      theme: MyTheme.darkTheme(),
+      home: const IntroScreen(),
     );
   }
 }

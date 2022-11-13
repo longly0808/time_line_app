@@ -1,9 +1,19 @@
 {
   "first": "first",
+  "intro_welcome": "WELCOME!",
+  "title_intro": "sign in or create a new account",
+  "button_intro_login": "Go to Sign in",
+  "no_account_yet": "No acount yet? ",
+  "rich_text_intro_sign_up":" Sign up",
   "hint_text_email": "email",
   "hint_text_password": "password",
+  "hint_text_username":"full name",
+  "hint_text_create_password": "Create password",
+  "hint_text_confirm_password": "Confirm password",
   "text_button_login": "Login",
+  "remember_me": "Remember me",
   "text_forgot_password":"dont have an account?",
   "text_sign_up": "Sign Up",
+  "text_button_register": "Register",
   "last": "last"
 }
