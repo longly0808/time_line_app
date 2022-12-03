@@ -21,10 +21,13 @@ class Dimens {
   static const double size52 = 52.0;
   static const double size56 = 56.0;
 
-
+  static const double size100 = 100.0;
   static const double size150 = 150.0;
   static const double size200 = 200.0;
   static const double size300 = 300.0;
+  static const double size387 = 387.0;
+  static const double size530 = 530.0;
+
 
   //textSize
   static const double textSize73 = 73.0;

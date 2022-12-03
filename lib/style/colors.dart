@@ -6,7 +6,7 @@ class MyColors {
   // static const primaryColor = Color.fromRGBO(247, 158, 137, 1);
   // static const activeColor = Color.fromRGBO(247, 108, 106, 1);
   // static const backgroundColor = Color.fromRGBO(255, 255, 255, 1);
-  static const primaryColor = Color.fromRGBO(94, 128, 175, 1.0);
+  static const primaryColor = Color.fromRGBO(42, 117, 213, 1.0);
   static const activeColor = Color.fromRGBO(245, 250, 252, 1.0);
   static const backgroundColor = Color.fromRGBO(226, 225, 230, 1.0);
   static const blackColor = Color.fromRGBO(39, 39, 39, 1);
@@ -26,6 +26,17 @@ class MyColors {
   static const darkAccentColor = Color.fromRGBO(201, 201, 201, 1.0);
 
   static const defaultColor = Color.fromRGBO(0, 0, 0, 1);
+
+  static const Color materialOrange = Color.fromRGBO(255, 171, 64, 1);
+  static const Color materialPink = Color.fromRGBO(255, 64, 129, 1);
+  static List<List<Color>> dotLoadingColor = [
+    [materialOrange, materialOrange],
+    [materialOrange, materialPink],
+    [materialOrange, materialPink],
+    [materialOrange, materialPink],
+    [materialOrange, materialPink],
+    [materialPink, materialPink]
+  ];
 
 
 }

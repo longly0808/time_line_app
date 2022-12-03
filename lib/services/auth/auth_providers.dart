@@ -1,31 +1,28 @@
-abstract class AuthService{
-  void login();
-  void logOut();
-  void register();
+import 'package:firebase_auth/firebase_auth.dart';
 
+abstract class AuthProvider {
+  Future<UserCredential> login();
+
+  Future<bool> logOut();
+
+  Future<User?> register({
+    required String name,
+    required String email,
+    required String password,
+  });
 }
 
-abstract class AuthWithFirebase extends AuthService{
+abstract class AuthWithFirebase extends AuthProvider {
   @override
-  void login() {
-    print('login');
-  }
-  @override
-  void logOut() {
-    print('log out');
-  }
-}
-class GmailFirebase extends AuthWithFirebase{
+  Future<UserCredential> login();
 
   @override
-  void register() {
-    print('say something in register with gmail firebase');
-  }
-}
-class AccountFirebase extends AuthWithFirebase{
-  @override
-  void register() {
-    print('say something in register with account firebase');
-  }
+  Future<bool> logOut();
 
+  @override
+  Future<User?> register({
+    required String name,
+    required String email,
+    required String password,
+  });
 }

@@ -14,6 +14,14 @@ class Constants{
   static const note_image ='assets/images/note.png';
   static const redAsterisk = ' *';
   static const String emptyString = '';
+  static List<List<double>> dotStop = [
+    [0.0, 1.0],
+    [0.0, 0.98],
+    [0.0, 0.65],
+    [0.0, 0.45],
+    [0.0, 0.25],
+    [0.0, 1.0],
+  ];
 }
 class DataFormat {
   static const String ddMMyyyy = 'dd/MM/yyyy';

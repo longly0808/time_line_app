@@ -1,13 +1,15 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 import 'package:easy_localization/easy_localization.dart';
+import 'package:time_line_app/app_dependencies.dart';
 import 'package:time_line_app/page/auth/register_screen.dart';
+import 'package:time_line_app/services/auth/google_auth_provider.dart';
 import 'package:time_line_app/style/dimens.dart';
 import 'package:time_line_app/widget/commons/custom_button.dart';
 import 'package:time_line_app/widget/commons/custom_textfield.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:time_line_app/widget/commons/switch_button.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -108,7 +110,12 @@ class _LoginScreenState extends State<LoginScreen> {
                           child: CustomButton(
                               width: size.width,
                               borderRadius: Dimens.size16,
-                              onclick: () {},
+                              onclick: () async {
+                                final GoogleSignInAccount? googleUser = await GoogleSignIn().signOut();
+                                googleUser?.clearAuthCache();
+                                print('google account out!!');
+
+                              },
                               text: tr('text_button_login'),
                               colors: theme.primaryColor),
                         ),
@@ -150,16 +157,23 @@ class _LoginScreenState extends State<LoginScreen> {
                             ),
                             const SizedBox(width: Dimens.size16,),
                             InkWell(
-                              onTap: () {},
+                              onTap: () async{
+                                final google =AppDependencies().injector.get<GoogleProvider>();
+
+                                // FirebaseAuth auth  = FirebaseAuth.instance;
+                                await google.login();
+
+
+                              },
                               child: Container(
                                 width: Dimens.size40,
                                 decoration: BoxDecoration(
                                     borderRadius:
                                     BorderRadius.circular(Dimens.size16),
-                                    border: Border.all(color: theme.primaryColorDark,width:2,)
+                                    border: Border.all(color: theme.primaryColor,width:2,)
                                 ),
                                 child: Image.asset('assets/image/icon_google.png',
-                                    width: Dimens.size32),
+                                    width: Dimens.size32, color: theme.primaryColor,),
                               ),
                             ),
                           ],
